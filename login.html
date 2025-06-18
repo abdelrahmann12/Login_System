@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Home</title>
+</head>
+<body>
+
+  <section class="vh-100 w-100">
+    <div class="shadow py-2">
+        <nav class=" container ">
+            <h2>SMART LOGIN</h2>
+
+            <button class="btn btn-outline-warning"><a class="text-decoration-none" href="index.html">Logout</a></button>
+        </nav>
+    </div>
+
+    <div class="title">
+        <h1>Welcome <span id="userName"></span></h1>
+    </div>
+  </section>
+
+
+    <script >
+           var name = localStorage.getItem("username");
+           document.getElementById("userName").textContent = name;
+    
+    </script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
